@@ -3,6 +3,11 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
+.left-content h5,
+.left-content h1,
+.left-content h4 {
+  margin: 0;
+}
 
 .container {
   width: calc(100% - 118px);
@@ -13,9 +18,6 @@ a {
   text-decoration: none;
 }
 /* Header Style */
-header {
-  height: 100vh;
-}
 .hero-header .box-shadow {
   margin-top: 20px;
   box-shadow: 0px 5px 15px 6px rgba(10, 10, 20, 0.1);
@@ -23,7 +25,7 @@ header {
 .row {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .hero-header nav ul {
@@ -70,3 +72,58 @@ header {
   font-weight: 700;
 }
 /* End Header Style */
+.high-quality .quality-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.high-quality .left-content {
+  width: calc((100% - 30px) / 2);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.left-content h5 {
+  color: #96bb7c;
+  font-size: 16px;
+}
+.left-content h1 {
+  font-size: 40px;
+  width: 500px;
+  text-transform: uppercase;
+  font-family: "Times New Roman", Times, serif;
+}
+.left-content h4 {
+  color: #737373;
+  font-size: 16px;
+  width: 300px;
+}
+.left-content div {
+  display: flex;
+  align-items: center;
+  padding: 20px 0px;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+.left-content div .join {
+  background-color: #96bb7c;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+.left-content .learn-more {
+  background-color: #fff;
+  color: #96bb7c;
+  border: 1px solid #96bb7c;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+.high-quality .right-content {
+  width: calc((100% - 30px) / 2);
+}
+.high-quality .right-content img {
+  width: 450px;
+  padding: 0px 55px 0px 56px;
+}
